@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">myFirstAndroidApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">Add one</string>
+    <string name="subtract">Subtract one</string>
+    <string name="tvOutPut">Your out put is 0</string>
+    <string name="hint">Type a command</string>
+    <string name="bNewButton">Try Command</string>
+    <string name="invalid">Invalid</string>
+</resources>
