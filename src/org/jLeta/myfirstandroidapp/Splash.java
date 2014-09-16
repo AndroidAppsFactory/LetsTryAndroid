@@ -2,7 +2,6 @@ package org.jLeta.myfirstandroidapp;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 
 /**
@@ -13,7 +12,9 @@ import android.os.Bundle;
  */
 public class Splash extends Activity {
 
-	MediaPlayer ourSong;
+	// Song is removed to testing installing the application with few
+	// memoryspace.
+	// MediaPlayer ourSong;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +23,14 @@ public class Splash extends Activity {
 		setContentView(R.layout.splash);
 
 		// Play music at background
-		ourSong = MediaPlayer.create(Splash.this, R.raw.godisnotgead);
-		ourSong.start();
+		// ourSong = MediaPlayer.create(Splash.this, R.raw.godisnotgead);
+		// ourSong.start();
 
 		// Create thread to call the main activity after some sleep time
 		Thread timer = new Thread() {
 			public void run() {
 				try {
-					sleep(5000);
+					sleep(2000);
 				} catch (InterruptedException ex) {
 					ex.printStackTrace();
 				} finally {
@@ -42,10 +43,14 @@ public class Splash extends Activity {
 		timer.start();
 	}
 
+	/*
+	 //Un comment this this to pause music play 
 	@Override
 	protected void onPause() {
 		super.onPause();
 		ourSong.stop();
 		finish();
 	}
+	
+	*/
 }

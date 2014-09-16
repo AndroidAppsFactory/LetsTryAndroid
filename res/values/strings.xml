@@ -10,4 +10,10 @@
     <string name="hint">Type a command</string>
     <string name="bNewButton">Try Command</string>
     <string name="invalid">Invalid</string>
+    <string name="sendEmail">Send Email</string>
+    <string name="subject">Subject</string>
+    <string name="PersonName">Person\'s Name</string>
+    <string name="EmailAddres">Email address(es):</string>
+    <string name="stupidhThings">Stupid Things that this Person does</string>
+    <string name="setWall">Set Wall</string>        
 </resources>
