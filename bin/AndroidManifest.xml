@@ -21,7 +21,18 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>               
+        </activity>      
+        
+        <!-- adding Dialog theme for an activity so that it will appear as a dialog  -->
+        <activity  android:name=".AboutUs" 
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="org.jLeta.myfirstandroidapp.ABOUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>  
+                 
         
         <!--  MENU activity -->
         <activity android:name=".Menu" android:label="@string/app_name" >
@@ -30,6 +41,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
+        <activity android:name=".Prefs" android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="org.jLeta.myfirstandroidapp.PREF" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
         
         <!-- main activity will start later -->
         <activity android:name=".Starter" android:label="@string/app_name" >
@@ -43,9 +62,14 @@
         <!--  we also don't need action name we will call it using class name inside code -->
         <activity android:name=".TextPlay" android:label="@string/app_name"/>
         <activity android:name=".Email" android:label="@string/app_name"/>
-        <activity android:name=".Camera" android:label="@string/app_name"/>                
+        <activity android:name=".OpenedClass" android:label="@string/openedClass_name"/>
+        <activity android:name=".Data" android:label="@string/data_name"/>
+        
+        <!-- you can lock activities orientation to : here camera app can only be in portrait mode.-->
+        <activity android:name=".Camera" android:label="@string/camera_app" 
+            android:screenOrientation="portrait"/>"
     </application>
     
-    <uses-permission android:name="android.permission.SET_WALLPAPER"/>//
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
 </manifest>

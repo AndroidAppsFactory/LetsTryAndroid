@@ -16,4 +16,29 @@
     <string name="EmailAddres">Email address(es):</string>
     <string name="stupidhThings">Stupid Things that this Person does</string>
     <string name="setWall">Set Wall</string>        
+    <string name="camera_app">Camera</string>
+    <string name="StartActivity">StartActivity</string>
+    <string name="StartActivityForResult">StartActivForResult</string>
+    <string name="tvGotString">text view</string>
+    <!--  &#8230; is representation of ...  -->
+    <string name="tvSendTop">Leta is &#8230;</string>
+    <string name="rCrazy">crazy</string>
+    <string name="rSuper">super</string>
+    <string name="rBoth">Both</string>
+    <string name="bReturn">Return</string>
+    <string name="openedClass_name">Data Receiver</string>
+    <string name="data_name">Data Sender</string>
+    <string name="aboutUs">about us</string>
+    <string name="preferences">preferences</string>
+    <string name="tvAboutUs">
+        This my first android app developed by the help of Traves tutrial on youtube. 
+        Very helpful to get me interoduced to the android development world.
+        thank you man!        
+    </string>
+    <string name="Exit">Exit</string>
+    <string name="editPref">Edit preference</string>
+    <string name="checkPref">start with splash</string>
+    <string name="listPref">List Preference</string>
+    <string name="SplashSettingTitle">Music</string>
+    <string name="SplashSettingSummary">Enable slpash at app start</string>
 </resources>

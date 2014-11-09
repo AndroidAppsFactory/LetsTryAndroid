@@ -34,7 +34,7 @@ public class Camera extends Activity implements View.OnClickListener {
 		ib = (ImageButton) findViewById(R.id.ibTakepic);
 		b = (Button) findViewById(R.id.bSetWall);
 		ib.setOnClickListener(this);
-		ib.setOnClickListener(this);
+		b.setOnClickListener(this);
 	}
 
 	@Override
@@ -57,7 +57,7 @@ public class Camera extends Activity implements View.OnClickListener {
 	}
 
 	/**
-	 * NOTE call to startActivityForResult will propagated to thos method.
+	 * NOTE call to startActivityForResult will propagated to those method.
 	 */
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
