@@ -2,7 +2,9 @@ package org.jLeta.myfirstandroidapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -24,6 +26,14 @@ public class OpenedClass extends Activity implements OnClickListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.send);
 		initializeComponents();
+
+		SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		String editText = prefs.getString("name", "user name");
+		String values = prefs.getString("list", "4");
+
+		if(values.equals("1")){
+
+		}
 
 		// receive data when it starts
 		Bundle gotBundle = getIntent().getExtras();
